@@ -37,7 +37,7 @@ const Navigation = ({setIsDrawerOpen, isSmallWindow}) => {
       >
         Browse all Games
       </Link>
-      <NavigationMenu />
+      <NavigationMenu setIsDrawerOpen={setIsDrawerOpen} />
     </Stack>
   )
 }

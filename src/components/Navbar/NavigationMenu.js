@@ -29,7 +29,7 @@ const menuItems = [
   'Horrer'
 ]
 
-const NavigationMenu = () => {
+const NavigationMenu = ({ setIsDrawerOpen }) => {
 
   const [anchorElement, setAnchcorElement] = useState(null)
 
@@ -40,6 +40,7 @@ const NavigationMenu = () => {
   }
 
   const handleCLose = () => {
+    setIsDrawerOpen(oldValue => !oldValue)
     setAnchcorElement(null)
   }
 
