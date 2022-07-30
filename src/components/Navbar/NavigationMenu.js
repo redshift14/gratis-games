@@ -44,6 +44,11 @@ const NavigationMenu = ({ setIsDrawerOpen }) => {
     setAnchcorElement(null)
   }
 
+  const handleHideDrawer = () => {
+    setIsDrawerOpen(false)
+    setAnchcorElement(null)
+  }
+
   return (
     <>
       <Button 
@@ -86,7 +91,7 @@ const NavigationMenu = ({ setIsDrawerOpen }) => {
           menuItems.map((item) => (
             <MenuItem 
               key={item}
-              onClick={handleCLose}
+              onClick={handleHideDrawer}
               sx={{
                 color: 'secondary.light200',
                 ':hover': {

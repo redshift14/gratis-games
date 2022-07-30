@@ -75,6 +75,9 @@ const Footer = () => {
                   color:'secondary.light100'
                 }
               }}
+              href='https://github.com/redshift14/gratis-games'
+              target='_blank'
+              rel='noreferrer'
             >
               Github
             </Link>
